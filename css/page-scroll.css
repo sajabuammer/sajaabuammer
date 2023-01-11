@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+padding: 0;
+margin: 0;
+font-size: 100%;
+font-weight: normal;
+list-style: none;
+}
+
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+
+body {
+	background-color: #CCC;	
+}
+
+a { color: #999; text-decoration: none; }
+a:hover { color: #FFF; }
+
+
+h1 {
+	font-size: 50px;
+	padding: 10px 0px 20px 0px; 	
+}
+#inner-section1 h1 {
+	color: #FFF;	
+}
+
+/*Instead of one wrapper/container element each one of the horizontal sections has a container set to 100% with a background color (outer-section) and a nested element set to 90% (inner-section)*/
+
+#outer-section1 {
+	width: 100%;
+	height: 100vh;	
+	background-image: url(../images/placeholder01.jpg);
+	background-size: cover;
+}
+#inner-section1 { 
+	width: 90%;
+	max-width: 1200px;	
+	margin: 0px auto;
+	padding: 0px 20px 0px 20px;
+}
+#outer-section2 {
+	width: 100%;
+	background-color: #CCC;
+}
+#inner-section2 { 
+	width: 90%;
+	max-width: 1200px;	
+	margin: 0px auto;
+	padding: 200px 20px 500px 20px;
+}
+#outer-section3 {
+	width: 100%;
+	background-color: #999;
+}
+#inner-section3 { 
+	width: 90%;
+	max-width: 1200px;	
+	margin: 0px auto;
+	padding: 200px 20px 500px 20px;
+}
+#outer-section4 {
+	width: 100%;
+	background-color: #666;
+}
+#inner-section4 { 
+	width: 90%;
+	max-width: 1200px;	
+	margin: 0px auto;
+	padding: 200px 20px 500px 20px;
+}
+#outer-section5 {
+	width: 100%;
+	background-color: #333;
+}
+#inner-section5 { 
+	width: 90%;
+	max-width: 1200px;	
+	margin: 0px auto;
+	padding: 200px 20px 500px 20px;
+}
+
+
+
+#back {
+	width: 90%;
+	max-width: 1200px;	
+	margin: 0px auto;
+	padding: 50px 0px 900px 0px;
+}
+#go {
+	background-color: #FFF;
+	text-align: center;
+	padding: 30px;	
+	width: 200px;
+	margin: 50px auto 50px auto;
+}
+#go a {
+	color: #999;
+	text-decoration: none;
+}
+#go a:hover {
+	color: #000;
+}
+
+
+
+/* hidden fixed navigation */
+#fixedbar { 
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*width absolut/fixed positioned elements centering works like this:*/
+	left: 50%;	/*(half of width) */
+	margin-left: -50%; /*(- value of half width)*/
+	padding: 0px 0px 0px 0px;
+	background: rgba(0,0,0,0.75);
+}
+
+#fixednav { 
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 0px;
+}
+
+#fixednav li { }
+
+#fixednav li a {
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #CCC;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 20px 8px;
+  margin-right: 6px; 
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear; 
+}
+
+#fixednav li a:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+}
+
+

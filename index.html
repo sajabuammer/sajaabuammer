@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Boilerplate Template</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="home-page">
+
+
+
+
+
+<div class="container">
+<section class="layout">
+<header>
+        <span class="title"><a href="index.html">SAJA ABUAMMER</a></span>
+
+    <nav class="links">
+    <ul class="menu">
+        <li><a href="projects_overview.html">Projects</a></li>
+        <li><a href="photography_overview.html">Photography</a></li>
+
+    </ul>
+    </nav>
+    </header>
+         <p class="intro-text">Welcome to my design archive. Here you will find the digital, analog, and photographic chronicles of my career to date.</div>
+         </section>
+</div>
+
+<div class="home-bottom"></div>
+<section class="layout">
+
+
+<div class="home-grid">
+
+    <p class="projects-title1">Projects</p>
+    <p class="projects-title2">Photography</p>
+    <a href="projects_overview.html"><img src="images/Thumbnails/Projects_TN.png" alt="" class="border"/></a>
+    <a href="photography_overview.html"><img src="images/Thumbnails/Light+Shadow_TN.jpg" alt="" class="radius"/></a>
+
+    <p class="about">I’m a Chicago-based designer currently working towards a Bachelor’s of Art in Graphic Design at the University of Illinois at Chicago. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nam blanditiis temporibus sunt unde quis nesciunt minima? Ea iusto quisquam suscipit error eligendi earum, in et sit eum maxime hic!</p>
+    <a href="Projects.html"><img src="images/Thumbnails/photo-placeholder.jpg"  alt="" class="about"/></a>
+
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h4>Contact Me</h4>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/saja-abuammer/">Linkedin</a>
+            <a href="mailto:sajaabuammer03@gmail.com">Email</a>
+            <a href="https://www.instagram.com/saja.abuammer/?hl=en">Instagram</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+</section>
+
+<script>
+    var links = document.getElementsByClassName("links")
+    var menu = document.getElementsByClassName("menu")
+ 
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+    }
+    else{
+        navbar.classList.remove("sticky");
+    }
+}
+</script>
+
+</body>
+</html>

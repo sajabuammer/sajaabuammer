@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: normal;
+    list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+   .cf:before, .cf:after { content: ""; display: table; }
+   .cf:after { clear: both; }
+   .cf { zoom: 1; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+body {
+   font-family: Montserrat;
+   font-size: 16px;
+   margin: 0px;
+   background-color: hsl(0, 4%, 16%);
+   color: white;
+}
+
+.layout {
+   width: 90%;
+   margin: 0px auto;
+}
+
+a{
+   color: black;
+   text-decoration: none;
+}
+
+a:hover{
+   color:grey;
+}
+
+img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+h1{
+   font-size: 2em;
+   font-weight: 500;
+   margin: 3em 0 0 0%;
+}
+
+h2{
+   padding: 2em 0 2em 0;
+   margin-left: 52%;
+}
+
+h3{
+   padding: 3em 0 3em 0;
+   font-size: 1.5em;
+}
+
+h4{
+   font-size: 1.2em;
+   font-weight: 700;
+   padding: 0 0 10px 0;
+}
+
+.container{
+   width: 100%;
+   height: 100vh;
+   background-image: url('../images/bg.jpg');
+   background-position: center;
+   background-size: cover;
+
+}
+
+/*----header and navigation----*/
+
+header{
+   display:flex;
+   justify-content: flex-end;
+   flex-direction: row-reverse;
+   align-items: center;
+   padding: 30px 0 20px 0;
+}
+header a{
+   color: white;
+}
+footer a{
+   color: white;
+}
+.title{
+   font-weight: 700;
+   margin-left: auto;
+}
+.title a{
+   transition: all 0.3s ease;
+}
+.links{
+   list-style: none;
+}
+.links li{
+   display: inline-block;
+   padding: 0px 20px;
+   
+}
+.links ul li a{
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+.links li:nth-child(1) {
+   padding: 0 20px 0 0;
+}
+nav.sticky{
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+/*----home page----*/
+
+
+.intro-text{
+   margin: 340px 0px 0 0;
+   width: 25%;
+   height: auto;
+   text-align: left;
+   font-weight: 500;
+   font-size: 1.5em;
+   color: white;
+}
+.home-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 10em;
+   margin: 200px 0 150px 0;
+
+}
+.projects-title1{
+   text-align: center;
+   padding: 20px;
+   font-weight: 500;
+   font-size: 1.5em;
+   text-transform: uppercase;
+}
+.projects-title2{
+   text-align: center;
+   padding: 20px;
+   font-weight: 500;
+   font-size: 1.5em;
+   text-transform: uppercase;
+}
+.border{
+   border: 5px solid white;
+}
+.radius{
+   border-radius: 50%;
+   border: 5px solid white;
+   
+}
+.about{
+   padding: 250px 0 0 0;
+}
+
+/*----footer----*/
+
+.footer-content{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 50px 0 100px 0;
+}
+.footer-content li{
+   font-size: 1.2em;
+   cursor: pointer;
+}
+.footer-content ul li a{
+   display: block;
+   transition: all 0.3s ease;
+}
+.footer-content ul li a:hover{
+   padding-left: 10px;
+
+}
+.footer-content h3{
+   padding: 20px;
+
+}
+/*----project-overview-page----*/
+
+.projects-grid{
+   margin-top: 3em;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2em;
+}
+.projects-grid img{
+   border: 1px solid white;
+}
+/*----photography-overview-page----*/
+
+.photography-grid{
+   margin-top: 3em;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2em;
+}
+.photography-grid img{
+   border-radius: 50%;
+   border: 1px solid white;
+}
+
+/*----project 1, 2, 3---*/
+
+.project1-grid{
+   margin-top: 3em;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2em;
+}
+.project1-grid img{
+   border: 3px solid white ;
+}
+.highlight1{
+   grid-column: span 2;
+   grid-row: span 2;
+}
+.highlight2{
+   grid-column-start: 2;
+   grid-column: span 2;
+   grid-row: span 2;
+}
+.concept{
+   width: 50%;
+}
+
+
+/*----photography-pages----*/
+
+.photography1-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2em;
+}
+.pthighlight{
+   grid-column: span 2;
+}
+.reflect{
+   transform: scaleX(-1);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+   .intro-text{
+      margin: 340px 0px 0 0;
+      width: 40%;
+   }
+   .home-grid{
+      grid-template-columns: 1fr;
+      grid-row: 25% 25% 25% 25%;
+
+   }
+   .projects-title1{
+      grid-row: 1;
+   }
+   .projects-title2{
+      grid-row: 3;
+      padding-top: 100px;
+   }
+   .about{
+      padding: 200px 0 0 0;
+   }
+   .project1-grid{
+      gap: 1.5em;
+   }
+   .projects-grid{
+      grid-template-columns: auto;
+   }
+   .photography-grid{
+      grid-template-columns: auto;
+   }
+   .photography1-grid{
+      grid-template-columns: 1fr;
+   }
+   .pthighlight{
+      grid-column: span 1;
+   }
+   .project1-grid{
+      margin-top: 3em;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2em;
+   }
+   .highlight1{
+      grid-column: span 1;
+   }
+   .highlight2{
+      grid-column: span 1;
+   }
+   .concept{
+      width: 100%;
+   }
+   h2{
+      width: 100%;
+      margin-left: 0%;
+   }
+}
