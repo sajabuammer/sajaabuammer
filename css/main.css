@@ -164,11 +164,11 @@ nav.sticky{
    text-transform: uppercase;
 }
 .border{
-   border: 5px solid white;
+   border: 5px solid rgb(0, 0, 0);
 }
 .radius{
    border-radius: 50%;
-   border: 5px solid white;
+   border: 5px solid black;
    
 }
 .about{
