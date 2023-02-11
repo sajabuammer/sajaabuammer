@@ -263,7 +263,7 @@ nav.sticky{
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
    .intro-text{
       margin: 340px 0px 0 0;
