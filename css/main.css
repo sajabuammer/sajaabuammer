@@ -168,7 +168,7 @@ nav.sticky{
 }
 .radius{
    border-radius: 50%;
-   border: 5px solid black;
+   border: 3px solid rgb(245, 245, 245);
    
 }
 .about{
